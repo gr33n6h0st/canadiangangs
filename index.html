@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for Visuals -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     
@@ -250,24 +252,24 @@
                     </a>
                 </article>
 
-                <!-- Resource 6: John Howard Society -->
+                <!-- Resource 6: RAFT / Youth Reconnect (Updated from notes) -->
                 <article class="bg-card-bg rounded-xl p-8 border border-gray-700 card-hover flex flex-col">
                     <div class="w-14 h-14 bg-slate-700/50 rounded-lg flex items-center justify-center mb-6 text-gray-300">
-                        <i class="fa-solid fa-building-lock text-2xl"></i>
+                        <i class="fa-solid fa-house-chimney-crack text-2xl"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-white mb-2">John Howard Society</h3>
-                    <p class="text-sm text-blue-400 mb-4 font-mono">PRISON REALITY</p>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">RAFT & Youth Reconnect</h3>
+                    <p class="text-sm text-blue-400 mb-4 font-mono">FAMILY CONFLICT</p>
                     <div class="text-gray-300 text-sm mb-6 flex-grow">
-                        A guide to the corrections system. Essential for understanding the "Two Years Plus a Day" rule (Provincial vs. Federal prison) and the reality of time.
+                        Based in St. Catharines, this resource targets the primary cause of youth homelessness: conflict with family members. It uses the "Family Natural Supports" (FNS) model.
                     </div>
                     <div class="bg-gray-800/50 p-4 rounded-lg mb-6 border-l-2 border-gray-500">
                         <p class="text-xs text-gray-400 font-bold uppercase mb-2">Critical Insight</p>
                         <p class="text-xs text-gray-300 leading-relaxed">
-                            This resource strips away the glamour of prison. It forces youth to confront the difference between Provincial Remand (overcrowded, no programs) and Federal Penitentiary (long-term records).
+                            Notes from class emphasize that family is often framed as the problem, but RAFT argues "Family Matters." Interventions must focus on "Bonding Supports" (family) and "Bridging Ties" (community) to prevent homelessness, which is a key pipeline to gang involvement.
                         </p>
                     </div>
-                    <a href="https://johnhoward.on.ca/toronto/" target="_blank" class="text-center w-full py-2 rounded border border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-white transition text-sm font-bold">
-                        Access Guide <i class="fa-solid fa-external-link-alt ml-2"></i>
+                    <a href="https://www.theraft.ca/" target="_blank" class="text-center w-full py-2 rounded border border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-white transition text-sm font-bold">
+                        Access Resource <i class="fa-solid fa-external-link-alt ml-2"></i>
                     </a>
                 </article>
 
@@ -321,21 +323,40 @@
         </div>
     </section>
 
-    <!-- Critical Reflection Section -->
+    <!-- Critical Reflection Section (UPDATED with Radar Chart) -->
     <section id="reflection" class="py-20 bg-dark-bg border-t border-gray-800">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="font-display text-2xl font-bold text-white mb-8 flex items-center">
                 <i class="fa-solid fa-pen-nib text-blue-500 mr-3"></i> CRITICAL REFLECTION
             </h2>
+            
             <div class="prose prose-invert prose-lg text-gray-400">
+                <h3 class="text-xl text-white font-bold mb-4">1. Modeling the System: Procedural Rhetoric</h3>
                 <p class="mb-6">
-                    I chose to focus this resource on <strong class="text-white">"Mentality"</strong> and <strong class="text-white">"Process"</strong> rather than simple prevention because traditional "Say No" campaigns fail to address the psychological drivers of youth violence. Working with the theme of "So What?", I wanted to challenge the user to ask, "So what if I get caught?" or "So what if I get angry?"
+                    The centerpiece of this resource is the <em>Ontario Justice Simulator</em>. In accordance with James Paul Gee’s learning principles, specifically <strong>"Situated Meaning"</strong> and <strong>"System Thinking,"</strong> this simulation moves beyond didactic definitions. As noted in my game design reflection, players learn the meaning of terms like "Section 24(2) Charter Exclusion" not by reading a textbook, but by experiencing the relief of a 15-year sentence disappearing due to a legal technicality. This utilizes <strong>Procedural Rhetoric</strong>—persuasion through rule-based systems—to argue that the justice system is about strategy and probability (represented by the <code>$rand</code> variable in my code), not just moral truth.
                 </p>
+
+                <h3 class="text-xl text-white font-bold mb-4">2. The Biology of Violence: Op-PFC</h3>
                 <p class="mb-6">
-                    Strengths of this approach include the use of <strong>We Love Hip Hop</strong> and <strong>Sixtales</strong> as cultural anchors. By linking real Toronto media and history to neuroscience, we validate the youth's culture while critiquing their impulses. Another strength is the inclusion of the <strong>"Ontario Justice Simulator."</strong> As James Paul Gee argues, learning is deepest when it is "situated." The simulator allows youth to experience the helplessness of the court system without the real-life consequences.
+                    While the simulation addresses the "Process," <strong>Operation Prefrontal Cortex</strong> addresses the "Mentality." I chose this resource because it shifts the conversation from morality ("bad kids") to biology ("stressed brains"). By focusing on the conflict between the Amygdala (fear) and Prefrontal Cortex (logic), we provide youth with a "cheat code" for their own minds. This connects directly to the research in my notes regarding <strong>Family Factors</strong> (Paradis et al., 2011), which suggest that supportive environments in adolescence act as protective factors against later dysfunction. Op-PFC attempts to artificially create that pause for reflection that might be missing in high-stress environments.
                 </p>
-                <p>
-                    A challenge was addressing the diversity of gang experiences (Indigenous vs. Biker vs. Street) in one site. I addressed this by selecting specific resources for each: <strong>STR8 UP</strong> for Indigenous healing and <strong>Public Safety Canada</strong> for broader demographics. Ultimately, this site moves beyond a list of links; it is a curriculum for survival, teaching that the ultimate rebellion is not violence, but controlling one's own mind.
+
+                <h3 class="text-xl text-white font-bold mb-4">3. The Web of Influence: Visualizing Risk</h3>
+                <p class="mb-6">
+                    As discussed in the course readings (Bornstein, Jager and Steinberg, 2012), adolescents exist in a dynamic web of influence. Parents and peers do not constitute disconnected parts of an adolescent’s social world. The graph below visualizes this "Web of Influence," contrasting the <strong>Protective Factors</strong> found in my research (Bonding Supports, Family Valuation) against the <strong>Risk Factors</strong> (Peer Pressure, Exclusion) inherent in the street lifestyle.
+                </p>
+
+                <!-- RADAR CHART CONTAINER -->
+                <div class="bg-gray-800 p-6 rounded-xl mb-8 flex flex-col items-center">
+                    <h4 class="text-white font-bold mb-4">Web of Influence: Protective vs. Risk Factors</h4>
+                    <div style="height: 400px; width: 100%;">
+                        <canvas id="riskFactorChart"></canvas>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4 text-center">Data synthesized from: Paradis et al. (2011), Change Collective (2018), and Bornstein, Jager & Steinberg (2012).</p>
+                </div>
+
+                <p class="mb-6">
+                    <strong>Conclusion:</strong> Ultimately, this site moves beyond a list of links; it is a curriculum for survival. By combining the "System Thinking" of the simulator with the "Self-Regulation" of Op-PFC and the cultural context of <em>We Love Hip Hop</em>, we provide a holistic resource that respects the intelligence of the user.
                 </p>
             </div>
         </div>
@@ -345,6 +366,84 @@
     <footer class="py-8 bg-black text-center text-gray-600 text-sm">
         <p>&copy; 2024 The Reality Check Resource. Created by Brandon Smart.</p>
     </footer>
+
+    <!-- Script for the Radar Chart -->
+    <script>
+        const ctx = document.getElementById('riskFactorChart').getContext('2d');
+        const riskFactorChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Family Bonding (Paradis 2011)', 
+                    'Bridging Ties (Change Collective)', 
+                    'Peer Approval (Bornstein 2012)', 
+                    'School Connection (RAFT)', 
+                    'Impulse Control (Op-PFC)'
+                ],
+                datasets: [{
+                    label: 'Protective Factors (Ideal)',
+                    data: [9, 8, 5, 8, 9],
+                    fill: true,
+                    backgroundColor: 'rgba(79, 172, 254, 0.2)',
+                    borderColor: 'rgba(79, 172, 254, 1)',
+                    pointBackgroundColor: 'rgba(79, 172, 254, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(79, 172, 254, 1)'
+                }, {
+                    label: 'Risk Exposure (Street Reality)',
+                    data: [3, 4, 9, 2, 3],
+                    fill: true,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    pointBackgroundColor: 'rgba(255, 99, 132, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        borderWidth: 3
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        pointLabels: {
+                            color: 'white',
+                            font: {
+                                size: 12,
+                                family: "'Oswald', sans-serif"
+                            }
+                        },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            color: 'rgba(255, 255, 255, 0.5)'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
